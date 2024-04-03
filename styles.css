@@ -1,0 +1,311 @@
+/* Resetting defaults */
+body, html {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    
+    padding: 0;
+    overflow-x: hidden; /* Hide horizontal scrollbar */
+}
+
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+/* Header styles */
+header {
+    background-color: rgb(20, 20, 107);
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Header content alignment */
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Vertically center the content */
+}
+
+/* Contact information alignment */
+.contact-info {
+    display: flex;
+    align-items: center;
+}
+
+/* Contact info paragraphs */
+.contact-info p {
+    margin: 0; /* Remove default margin */
+    margin-right: 20px; /* Add some space between the contact info and logos */
+}
+
+/* Logo styles */
+.logo {
+    margin-left: auto; /* Push the logo to the right */
+}
+
+/* Logo images */
+.logo img {
+    margin-left: 15px;
+    width: 20px;
+    height: 20px;
+}
+
+/* Language selector styles */
+.language-selector {
+    margin-left: 20px;
+}
+
+/* Language selector dropdown */
+.language-selector select {
+    padding: 5px;
+    font-size: 16px;
+}
+
+/* Navigation styles */
+nav {
+    background-color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+/* Navigation list */
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+/* Navigation list items */
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+/* Navigation links */
+nav ul li a {
+    color: black;
+    text-decoration: none;
+    align-self: center;
+}
+ 
+/* Section margins */
+section {
+    margin-bottom: 20px;
+}
+
+/* Footer styles */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+/* Photo container styles */
+.photo-container {
+    position: relative; /* Ensure the container is relative to position the text */
+}
+
+/* Full-screen photo */
+.full-screen-photo {
+    width: 100vw;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* Text overlay styles */
+.text-overlay {
+    position: absolute;
+    top: 50%; /* Position the text in the vertical center */
+    left: 50%; /* Position the text in the horizontal center */
+    transform: translate(-50%, -50%); /* Center the text precisely */
+    text-align: center;
+    color: white;
+}
+
+/* Heading styles in text overlay */
+.text-overlay h1 {
+    font-size: 3em;
+}
+
+/* Paragraph styles in text overlay */
+.text-overlay p {
+    font-size: 1.5em;
+}
+
+/* About Us container styles */
+.abouts_us-container {
+    position: relative; /* Ensure the container is relative to position the text */
+}
+
+/* About Us photo */
+.abouts_us-photo {
+    width: 100vw;
+    height: auto;
+    display: block;
+    object-fit: cover;
+    margin: 0;
+    padding: 0;
+}
+
+/* About Us text overlay styles */
+.abouts_us_text-overlay {
+    position: absolute;
+    top: 27%; /* Position the text in the vertical center */
+    left: 40%; /* Position the text in the horizontal center */
+    transform: translate(-50%, -50%); /* Center the text precisely */
+    text-align: center;
+    color: black;
+    max-width: 80%; /* Limit the width of the text to 80% of the container */
+}
+
+/* About Us heading styles */
+.abouts_us_text-overlay h1 {
+    font-size: 2.5em; /* Adjust the font size of the heading */
+    margin-bottom: 20px; /* Add spacing below the heading */
+}
+
+/* About Us paragraph styles */
+.abouts_us_text-overlay p {
+    font-size: 1.2em; /* Adjust the font size of the paragraph */
+    line-height: 1.6; /* Increase the line height for better readability */
+    margin-bottom: 20px; /* Add spacing below the paragraph */
+}
+
+/* Services container styles */
+.services-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: #e9ecef;
+    width: 100vw;
+
+}
+
+/* Services text overlay margin */
+.services-text-overlay {
+    margin-top: 25px; /* Adjust as needed */
+}
+
+/* Services logos container */
+.services-logos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: -5px ;
+}
+
+/* Services logo container */
+.services-logo {
+    position: relative;
+    cursor: pointer;
+    margin: 20px;
+}
+
+/* Add styles for the footer text */
+ 
+  
+ 
+  /* Add styles for the text */
+  .logo-text {
+    font-size: 1.2em;
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+  
+  /* Add hover effect for services-logo */
+  .services-logo:hover .logo-text-container {
+    display: block; /* show container on hover */
+  }
+  
+  
+  /* Add styles for the text */
+  .logo-text {
+    font-size: 1.2em;
+    margin-top: 10px; /* Adjust margin as needed */
+  }
+
+  /* Add hover effect for services-logo */
+  .services-logo:hover .logo-text-container {
+    display: block; /* show container on hover */
+  }
+
+  .logo-text-container {
+    display: none; /* initially hidden */
+  }
+
+
+/* Services logo paragraph styles */
+.services-logo p {
+    font-size: large;
+    font-weight: 700;
+}
+
+/* Services logo image styles */
+.services-logo img {
+    width: 100px; /* Set fixed width */
+    height: 100px; /* Set fixed height */
+    margin: 20px; /* Adjust margin between logos */
+    object-fit: contain; /* Maintain aspect ratio and fit within the specified dimensions */
+    transition: transform 0.3s ease-in-out; /* Add transition for smooth hover effect */
+}
+
+/* Services logo hover effect */
+.services-logo img:hover {
+    transform: scale(1.1); /* Increase size on hover */
+}
+
+.logo-description{
+    margin-bottom: 50px;
+}
+ .logos-description{
+    font-size: 20px;
+    width: 65vw;
+ }
+
+ /* portfolio  */
+
+ .portfolio_h4{
+    text-align: center;
+ }
+
+ ul.button-list {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove default padding */
+    margin: 0; /* Remove default margin */
+    text-align: center; /* Center the buttons horizontally */
+  }
+
+  /* Style for list items */
+  ul.button-list li {
+    display: inline-block; /* Display list items inline */
+    margin-right: 10px; /* Add spacing between buttons */
+  }
+
+  /* Style for buttons */
+  ul.button-list li button {
+    padding: 10px 30px; 
+    font-weight: 600;/* Add padding to the buttons */
+    background-color: #c8c6ba; /* Set background color */
+    color: #060650; /* Set text color */
+    border: 0px; /* Remove border */
+    border-radius: 0px; /* Add border radius */
+    cursor: pointer; /* Change cursor to pointer on hover */
+    transition: background-color 0.3s; /* Add transition effect */
+  }
+
+  /* Change background color on hover */
+  ul.button-list li button:hover {
+    background-color: #0056b3;
+  }
+
+
+
+ 
